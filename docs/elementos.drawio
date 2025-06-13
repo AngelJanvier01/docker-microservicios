@@ -13,19 +13,19 @@
                 <mxCell id="api" value="API Gateway&#xa;[Contenedor: Tyk API Gateway 3.x]&#xa;Conector que sirve de puerta de acceso a los microservicios. Si está presente en el patrón,&#xa;el cliente no llama a los microservicios directamente." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6DA3D6;" parent="1" vertex="1">
                     <mxGeometry x="310" y="260" width="340" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="pagos" value="Pagos&#xa;[Contenedor: GO]&#xa;Mostrar los pagos realizados por los clientes." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
+                <mxCell id="pagos" value="Pagos&#xa;[Contenedor: GO]&#xa;Mostrar los pagos realizados por los clientes." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD966;" parent="1" vertex="1">
                     <mxGeometry x="40" y="260" width="220" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="reporteador" value="Reporteador&#xa;[Contenedor: Python 3.x, Flask 2.x]&#xa;Generar el documento de la póliza de un asegurado." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
                     <mxGeometry x="100" y="440" width="220" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="gestor" value="Gestor de clientes&#xa;[Contenedor: Python 3.x, Flask 2.x]&#xa;Gestiona la información de los clientes en el sistema." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
+                <mxCell id="gestor" value="Gestor de clientes&#xa;[Contenedor: Python 3.x, Flask 2.x]&#xa;Gestiona la información de los clientes en el sistema." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD966;" parent="1" vertex="1">
                     <mxGeometry x="470" y="440" width="240" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="mongo" value="Base de datos&#xa;[Contenedor: MongoDB 5.x]&#xa;Almacena información del sistema" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#BDD7EE;" parent="1" vertex="1">
                     <mxGeometry x="500" y="550" width="180" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="notificador" value="Notificador&#xa;[Contenedor: Python 3.x, Flask 2.x]&#xa;Generar el documento de la póliza de un asegurado." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
+                <mxCell id="notificador" value="Notificador&#xa;[Contenedor: Python 3.x, Flask 2.x]&#xa;Generar el documento de la póliza de un asegurado." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFD966;" parent="1" vertex="1">
                     <mxGeometry x="690" y="260" width="240" height="80" as="geometry"/>
                 </mxCell>
 

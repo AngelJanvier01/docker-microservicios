@@ -27,12 +27,12 @@
         </mxCell>
 
         <!-- Notificador -->
-        <mxCell id="notificador" value="Notificador&#xa;[Contenedor: Python 3.x, Flask 2.x]&#xa;Generar el documento de la póliza de un asegurado." style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#d4eaff;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="notificador" value="Notificador&#xa;[Contenedor: Python 3.x, Flask 2.x]&#xa;Generar el documento de la póliza de un asegurado." style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#ffd966;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="60" y="180" width="200" height="80" as="geometry"/>
         </mxCell>
 
         <!-- Pagos -->
-        <mxCell id="pagos" value="Pagos&#xa;[Contenedor: Go]&#xa;Mostrar los pagos realizados por los clientes" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#d4eaff;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="pagos" value="Pagos&#xa;[Contenedor: Go]&#xa;Mostrar los pagos realizados por los clientes" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#ffd966;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="640" y="180" width="200" height="80" as="geometry"/>
         </mxCell>
 
@@ -47,7 +47,7 @@
         </mxCell>
 
         <!-- Gestor de clientes -->
-        <mxCell id="gestor" value="Gestor de clientes&#xa;[Contenedor: Python 3.x, Flask 2.x]&#xa;Gestiona la información de los clientes en el sistema." style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#d4eaff;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="gestor" value="Gestor de clientes&#xa;[Contenedor: Python 3.x, Flask 2.x]&#xa;Gestiona la información de los clientes en el sistema." style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#ffd966;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="300" y="480" width="200" height="80" as="geometry"/>
         </mxCell>
 
