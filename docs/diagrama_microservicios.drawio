@@ -21,6 +21,11 @@
           <mxGeometry x="60" y="60" width="200" height="80" as="geometry"/>
         </mxCell>
 
+        <!-- Simulador -->
+        <mxCell id="simulador" value="Simulador&#xa;[Contenedor: Python 3.x]&#xa;Genera pagos simulados." style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#d4eaff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="640" y="60" width="200" height="80" as="geometry"/>
+        </mxCell>
+
         <!-- Notificador -->
         <mxCell id="notificador" value="Notificador&#xa;[Contenedor: Python 3.x, Flask 2.x]&#xa;Generar el documento de la póliza de un asegurado." style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#d4eaff;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="60" y="180" width="200" height="80" as="geometry"/>
@@ -67,6 +72,10 @@
         </mxCell>
 
         <mxCell id="line2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="telegram" target="notificador">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="line3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="gateway" target="simulador">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
 
