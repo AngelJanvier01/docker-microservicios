@@ -72,6 +72,12 @@ CHAT_ID = <TELEGRAM_CHAT_ID>
 
 Para este microservicio no hay que realizar alguna configuración
 
+### payment-validator-ms
+
+Este microservicio en Go lee `payment_records.json` y envía una notificación por Telegram
+cuando detecta un pago con estado `PAID`. Reemplaza `YOUR_TELEGRAM_BOT_TOKEN` en
+`payment-validator-ms/telegram/notifier.go` antes de ejecutarlo.
+
 ### Reporteador
 
 Para este microservicio no hay que realizar alguna configuración

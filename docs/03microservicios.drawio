@@ -36,6 +36,11 @@
           <mxGeometry x="640" y="180" width="200" height="80" as="geometry"/>
         </mxCell>
 
+        <!-- Validador de pagos -->
+        <mxCell id="validator" value="payment-validator-ms&#xa;[Contenedor: Go]&#xa;Valida pagos y notifica al cliente" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#d4eaff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="360" y="180" width="200" height="80" as="geometry"/>
+        </mxCell>
+
         <!-- Base Redis -->
         <mxCell id="redis" value="Base de datos&#xa;[Contenedor: Redis 6.0.x]&#xa;Componentes responsables de registrar y almacenar las peticiones recibidas por el Gateway." style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#a3d5ff;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="60" y="360" width="200" height="80" as="geometry"/>
