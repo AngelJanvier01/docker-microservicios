@@ -1,14 +1,26 @@
 <mxfile host="65bd71144e">
     <diagram name="Diagrama GSS" id="RDL5GLJZUlBtUXD1OeAd">
-        <mxGraphModel dx="1240" dy="1107" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1692" dy="1129" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
+                <mxCell id="2" style="edgeStyle=none;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="agentBox" target="label1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="agentBox" target="label2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="agentBox" target="label3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="agentBox" target="label4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
                 <mxCell id="agentBox" value="Agente de seguros&#xa;[Persona]&#xa;Intermediario entre aseguradora&#xa;y asegurado" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;" parent="1" vertex="1">
-                    <mxGeometry x="170" y="100" width="300" height="100" as="geometry"/>
+                    <mxGeometry x="180" y="100" width="300" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="gssBox" value="Global Surance System (GSS)&#xa;[Sistema de Software]&#xa;Sistema de gestión de póliza de seguro." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;" parent="1" vertex="1">
-                    <mxGeometry x="90" y="310" width="460" height="100" as="geometry"/>
+                    <mxGeometry x="110" y="320" width="460" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="arrow1" style="endArrow=block;html=1;" parent="1" source="agentBox" target="gssBox" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -31,10 +43,10 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="label1" value="Gestionar los&#xa;clientes&#xa;asegurados" style="text;html=1;strokeColor=none;fillColor=none;align=center;" parent="1" vertex="1">
-                    <mxGeometry x="120" y="220" width="100" height="60" as="geometry"/>
+                    <mxGeometry x="100" y="220" width="100" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="label2" value="Notificar a&#xa;los clientes&#xa;sus movimientos" style="text;html=1;strokeColor=none;fillColor=none;align=center;" parent="1" vertex="1">
-                    <mxGeometry x="220" y="220" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="210" y="220" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="label3" value="Consultar los&#xa;Pagos&#xa;realizados" style="text;html=1;strokeColor=none;fillColor=none;align=center;" parent="1" vertex="1">
                     <mxGeometry x="350" y="220" width="100" height="60" as="geometry"/>
@@ -44,6 +56,18 @@
                 </mxCell>
                 <mxCell id="circle1" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1F4E79;" parent="1" vertex="1">
                     <mxGeometry x="280" y="30" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.067;entryY=0.03;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="label1" target="gssBox">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.298;entryY=0.03;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="label2" target="gssBox">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.678;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="label3" target="gssBox">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.87;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="label4" target="gssBox">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
