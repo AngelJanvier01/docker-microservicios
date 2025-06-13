@@ -1,0 +1,18 @@
+[submodule "gestor-de-clientes"]
+	path = gestor-de-clientes
+	url = https://gitlab.com/tareas-arquitectura-de-software-curso/microservicios/gestor-de-clientes.git
+[submodule "notificador"]
+	path = notificador
+	url = https://gitlab.com/tareas-arquitectura-de-software-curso/microservicios/notificador.git
+[submodule "reporteador"]
+	path = reporteador
+	url = https://gitlab.com/tareas-arquitectura-de-software-curso/microservicios/reporteador.git
+[submodule "pagos"]
+	path = pagos
+	url = https://gitlab.com/tareas-arquitectura-de-software-curso/microservicios/pagos.git
+[submodule "simulador"]
+	path = simulador
+	url = https://gitlab.com/tareas-arquitectura-de-software-curso/microservicios/simulador.git
+[submodule "cliente"]
+	path = cliente
+	url = https://gitlab.com/tareas-arquitectura-de-software-curso/microservicios/cliente.git

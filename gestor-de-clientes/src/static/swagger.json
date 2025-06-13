@@ -1,0 +1,153 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Microservicio para la gestión de clientes asegurados",
+    "version": "1.0.0",
+    "title": "Microservicio API",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "clientes",
+      "description": "Gestión de clientes"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/clients": {
+      "post": {
+        "tags": [
+          "clientes"
+        ],
+        "summary": "Crear cliente",
+        "description": "Se crea el registro de un nuevo cliente asegurado en el sistema",
+        "operationId": "addClient",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "201": {
+            "description": "Cliente creado",
+            "schema": {
+              "$ref": "#/definitions/Client"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "clientes"
+        ],
+        "summary": "Obtener clientes",
+        "description": "Se consultan todos los clientes registrados en el sistema",
+        "operationId": "getClients",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Clientes registrados",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Client"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Client": {
+      "type": "object",
+      "required": [
+        "name",
+        "lastName"
+      ],
+      "properties": {
+        "client_id": {
+          "type": "string",
+          "example": "f8522d8648c247c6a81231fa4e87d36a"
+        },
+        "name": {
+          "type": "string",
+          "example": "Joe"
+        },
+        "last_name": {
+          "type": "string",
+          "example": "Doe"
+        },
+        "job_title": {
+          "type": "string",
+          "example": "Public house manager"
+        },
+        "company": {
+          "type": "string",
+          "example": "Taylor, Sullivan and Scott"
+        },
+        "birthdate": {
+          "type": "string",
+          "example": "16-06-1926"
+        },
+        "ssn": {
+          "type": "string",
+          "example": "764-87-4442"
+        },
+        "address": {
+          "type": "string",
+          "example": "PSC 9251, Box 7156\nAPO AE 65732"
+        },
+        "blood_group": {
+          "type": "string",
+          "example": "B+"
+        },
+        "sex": {
+          "type": "string",
+          "example": "M"
+        },
+        "email": {
+          "type": "string",
+          "example": "hforbes@gmail.com"
+        },
+        "credit_card_number": {
+          "type": "string",
+          "example": "4978983349068731"
+        },
+        "credit_card_provider": {
+          "type": "string",
+          "example": "JCB 16 digit"
+        },
+        "credit_card_security_code": {
+          "type": "string",
+          "example": "165"
+        },
+        "credit_card_expire": {
+          "type": "string",
+          "example": "11/23"
+        },
+        "policy": {
+          "type": "string",
+          "example": "U76018"
+        },
+        "clabe": {
+          "type": "string",
+          "example": "002123456702383897"
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  }
+}

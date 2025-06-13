@@ -1,0 +1,46 @@
+{
+    "name": "Keyless pagos",
+    "api_id": "keyless-pagos",
+    "org_id": "default",
+    "definition": {
+        "location": "header",
+        "key": "version"
+    },
+    "use_keyless": true,
+    "version_data": {
+        "not_versioned": true,
+        "versions": {
+            "Default": {
+                "name": "Default"
+            }
+        }
+    },
+    "proxy": {
+        "listen_path": "/pagos/",
+        "target_url": "http://pagos:8003/",
+        "strip_listen_path": true
+    },
+    "CORS": {
+        "enable": true,
+        "allowed_methods": [
+            "GET",
+            "POST",
+            "PUT",
+            "DELETE",
+            "HEAD",
+            "OPTIONS"
+        ],
+        "allowed_headers": [
+            "Origin",
+            "Accept",
+            "Content-Type",
+            "X-Requested-With",
+            "Authorization"
+        ],
+        "exposed_headers": [],
+        "allow_credentials": false,
+        "max_age": 24,
+        "options_passthrough": false,
+        "debug": false
+    }
+}

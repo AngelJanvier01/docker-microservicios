@@ -1,0 +1,76 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Microservicio para la gestión de notificaciones",
+    "version": "1.0.0",
+    "title": "Microservicio Notifier",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "notificaciones",
+      "description": "Gestión de notificaciones"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/notify": {
+      "post": {
+        "tags": [
+          "notificaciones"
+        ],
+        "summary": "Enviar notificación",
+        "description": "Se envía un mensaje de notificación específico a través del servicio de mensajería de Telegram",
+        "operationId": "sendNotification",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Notification"
+            }
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Notificación enviada"
+          },
+          "400": {
+            "description": "Petición inválida"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Notification": {
+      "type": "object",
+      "required": [
+        "name",
+        "lastName"
+      ],
+      "properties": {
+        "message": {
+          "type": "string",
+          "example": "se ha realizado el cobro de la póliza X"
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Find out more about Swagger",
+    "url": "http://swagger.io"
+  }
+}

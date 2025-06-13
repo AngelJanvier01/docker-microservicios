@@ -1,0 +1,22 @@
+version: '3'
+services:
+  database:
+    image: mongo
+    ports:
+      - "0.0.0.0:27017:27017"
+    networks:
+      gescli:
+    environment:
+      MONGO_INITDB_DATABASE: "database"
+  gestor:
+    build: .
+    depends_on:
+      - database
+    ports:
+      - "0.0.0.0:8000:8000"
+    expose:
+      - 8000
+    networks:
+      gescli:
+networks:
+  gescli:

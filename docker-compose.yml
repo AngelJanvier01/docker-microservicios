@@ -1,0 +1,90 @@
+version: '3'
+services:
+  database:
+    restart: always
+    image: mongo
+    ports:
+      - "0.0.0.0:27017:27017"
+    expose:
+      - 27017
+    networks:
+      microservices:
+    environment:
+      MONGO_INITDB_DATABASE: "database"
+    volumes:
+      - ./volume/database:/data/db
+  gestor-clientes:
+    image: registry.gitlab.com/tareas-arquitectura-de-software-curso/microservicios/gestor-de-clientes:latest
+    depends_on:
+      - database
+    ports:
+      - "0.0.0.0:8000:8000"
+    expose:
+      - 8000
+    networks:
+      microservices:
+  notificador:
+    build: ./notificador
+    ports:
+      - "0.0.0.0:8001:8001"
+    expose:
+      - 8001
+    networks:
+      microservices:
+    volumes:
+      - ./notificador:/notifier
+  reporteador:
+    image: registry.gitlab.com/tareas-arquitectura-de-software-curso/microservicios/reporteador:latest
+    ports:
+      - "0.0.0.0:8002:8002"
+    expose:
+      - 8002
+    networks:
+      microservices:
+  pagos:
+    build: ./pagos
+    ports:
+      - "0.0.0.0:8003:8003"
+    expose:
+      - 8003
+    networks:
+      microservices:
+    volumes:
+      - ./volume/simulador:/data
+      - ./pagos:/go/src/pagos
+  simulador:
+    image: registry.gitlab.com/tareas-arquitectura-de-software-curso/microservicios/simulador:latest
+    networks:
+      microservices:
+    volumes:
+      - ./volume/simulador:/data
+  tyk-gateway:
+    image: tykio/tyk-gateway:v3.2.1
+    ports:
+      - 8080:8080
+    networks:
+      microservices:
+    volumes:
+      - ./tyk/tyk.standalone.conf:/opt/tyk-gateway/tyk.conf
+      - ./tyk/apps:/opt/tyk-gateway/apps
+    environment:
+      TYK_GW_SECRET: "foo"
+    depends_on:
+      - tyk-redis
+  tyk-redis:
+    image: redis:5.0-alpine
+    networks:
+      microservices:
+    ports:
+      - 6379:6379
+  cliente:
+    build:
+      context: ./cliente
+    networks:
+      microservices:
+    ports:
+      - "0.0.0.0:80:80"
+    expose:
+      - 80
+networks:
+  microservices:

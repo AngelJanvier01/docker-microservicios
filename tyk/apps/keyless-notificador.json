@@ -1,0 +1,46 @@
+{
+    "name": "Keyless notificador",
+    "api_id": "keyless-notificador",
+    "org_id": "default",
+    "definition": {
+        "location": "header",
+        "key": "version"
+    },
+    "use_keyless": true,
+    "version_data": {
+        "not_versioned": true,
+        "versions": {
+            "Default": {
+                "name": "Default"
+            }
+        }
+    },
+    "proxy": {
+        "listen_path": "/notificador/",
+        "target_url": "http://notificador:8001/",
+        "strip_listen_path": true
+    },
+    "CORS": {
+        "enable": true,
+        "allowed_methods": [
+            "GET",
+            "POST",
+            "PUT",
+            "DELETE",
+            "HEAD",
+            "OPTIONS"
+        ],
+        "allowed_headers": [
+            "Origin",
+            "Accept",
+            "Content-Type",
+            "X-Requested-With",
+            "Authorization"
+        ],
+        "exposed_headers": [],
+        "allow_credentials": false,
+        "max_age": 24,
+        "options_passthrough": false,
+        "debug": false
+    }
+}

@@ -1,0 +1,17 @@
+default:
+  image: docker:24.0.5
+  services:
+    - docker:24.0.5-dind
+  before_script:
+    - docker info
+
+stages:
+  - release
+
+release:
+  stage: release
+  before_script:
+    - echo $CI_JOB_TOKEN | docker login $CI_REGISTRY -u $CI_REGISTRY_USER --password-stdin
+  script:
+    - docker buildx create --name pagos --driver=docker-container
+    - docker buildx build --tag $CI_REGISTRY_IMAGE:latest --platform linux/arm64,linux/amd64 --builder pagos --push .

@@ -1,0 +1,26 @@
+stages:
+  - test
+  - release
+
+test:
+  stage: test
+  image: python:3-bullseye
+  script:
+    - apt-get update -y && apt-get install -y --no-install-recommends weasyprint libpango-1.0-0 libharfbuzz0b libpangoft2-1.0-0 libharfbuzz-subset0 && rm -rf /var/lib/apt/lists/*
+    - pip install -r requirements.txt
+    - pip install pytest pytest-cov
+    - python -m coverage run -m unittest discover 
+    - python -m coverage report -m
+  coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
+
+release:
+  stage: release
+  image: docker:24.0.5
+  services:
+    - docker:24.0.5-dind
+  before_script:
+    - docker info
+    - echo $CI_JOB_TOKEN | docker login $CI_REGISTRY -u $CI_REGISTRY_USER --password-stdin
+  script:
+    - docker buildx create --name container --driver=docker-container
+    - docker buildx build --tag $CI_REGISTRY_IMAGE:latest --platform linux/arm64,linux/amd64 --builder container --push .
