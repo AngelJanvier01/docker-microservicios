@@ -1,0 +1,194 @@
+<mxfile host="app.diagrams.net" version="20.1.2" editor="1" type="device" pages="3">
+  <diagram id="context" name="Contexto">
+    <mxGraphModel dx="906" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="Usuario" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="240" width="80" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="Cliente GUI" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="240" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="Tyk Gateway" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="240" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="Gestor de Clientes" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="160" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="Notificador" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="220" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="Pagos" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="280" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="Reporteador" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="340" width="120" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="Simulador" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="340" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="Telegram API" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="220" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="MongoDB" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="160" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" value="Volume" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="280" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" value="Redis" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="340" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="14" style="endArrow=block;html=1;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" style="endArrow=block;html=1;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="16" style="endArrow=block;html=1;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="17" style="endArrow=block;html=1;" edge="1" parent="1" source="4" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="18" style="endArrow=block;html=1;" edge="1" parent="1" source="4" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="19" style="endArrow=block;html=1;" edge="1" parent="1" source="4" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="20" style="endArrow=block;html=1;" edge="1" parent="1" source="4" target="9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="21" style="endArrow=block;html=1;" edge="1" parent="1" source="6" target="10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="22" style="endArrow=block;html=1;" edge="1" parent="1" source="5" target="11">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="23" style="endArrow=block;html=1;" edge="1" parent="1" source="9" target="12">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="24" style="endArrow=block;html=1;" edge="1" parent="1" source="7" target="12">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="25" style="endArrow=block;html=1;" edge="1" parent="1" source="4" target="13">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="modules" name="Vista de Módulos">
+    <mxGraphModel dx="906" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="30" value="Tyk Gateway" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="120" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="31" value="Gestor de Clientes" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="40" width="150" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="32" value="Notificador" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="100" width="150" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="33" value="Pagos" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="160" width="150" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="34" value="Reporteador" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="220" width="150" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="35" value="Simulador" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="280" width="150" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="36" value="MongoDB" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="40" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="37" value="Redis" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="100" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="38" value="Volume" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="160" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="39" style="endArrow=block;html=1;" edge="1" parent="1" source="30" target="31">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="40" style="endArrow=block;html=1;" edge="1" parent="1" source="30" target="32">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="41" style="endArrow=block;html=1;" edge="1" parent="1" source="30" target="33">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="42" style="endArrow=block;html=1;" edge="1" parent="1" source="30" target="34">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="43" style="endArrow=block;html=1;" edge="1" parent="1" source="30" target="35">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="44" style="endArrow=block;html=1;" edge="1" parent="1" source="31" target="36">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="45" style="endArrow=block;html=1;" edge="1" parent="1" source="30" target="37">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="46" style="endArrow=block;html=1;" edge="1" parent="1" source="33" target="38">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="tyk" name="Elementos Tyk">
+    <mxGraphModel dx="906" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="50" value="Tyk Gateway" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="120" width="130" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="51" value="tyk.standalone.conf" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="70" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="52" value="tyk-redis" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="130" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="53" value="Apps" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="190" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="54" value="keyless-gestor-clientes.json" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="190" width="170" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="55" value="keyless-notificador.json" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="240" width="170" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="56" value="keyless-pagos.json" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="290" width="170" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="57" value="keyless-reporteador.json" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="340" width="170" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="58" style="endArrow=block;html=1;" edge="1" parent="1" source="50" target="51">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="59" style="endArrow=block;html=1;" edge="1" parent="1" source="50" target="52">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="60" style="endArrow=block;html=1;" edge="1" parent="1" source="50" target="53">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="61" style="endArrow=block;html=1;" edge="1" parent="1" source="53" target="54">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="62" style="endArrow=block;html=1;" edge="1" parent="1" source="53" target="55">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="63" style="endArrow=block;html=1;" edge="1" parent="1" source="53" target="56">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="64" style="endArrow=block;html=1;" edge="1" parent="1" source="53" target="57">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
