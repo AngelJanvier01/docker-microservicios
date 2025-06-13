@@ -1,0 +1,16 @@
+[
+  {
+    "policy_id": "POL123456",
+    "client_name": "Carlos Pérez",
+    "amount": 1500.00,
+    "status": "PAID",
+    "telegram_id": 123456789
+  },
+  {
+    "policy_id": "POL654321",
+    "client_name": "María López",
+    "amount": 2000.00,
+    "status": "PENDING",
+    "telegram_id": 987654321
+  }
+]

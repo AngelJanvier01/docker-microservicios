@@ -28,37 +28,46 @@
                 <mxCell id="notificador" value="Notificador&#xa;[Contenedor: Python 3.x, Flask 2.x]&#xa;Generar el documento de la póliza de un asegurado." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
                     <mxGeometry x="690" y="320" width="240" height="80" as="geometry"/>
                 </mxCell>
+                <mxCell id="validator" value="payment-validator-ms&#xa;[Contenedor: Go]&#xa;Valida pagos y notifica al cliente" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="320" width="240" height="80" as="geometry"/>
+                </mxCell>
                 <mxCell id="simulador" value="Simulador&#xa;[Contenedor: Python 3.x]&#xa;Genera pagos simulados." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
                     <mxGeometry x="220" y="620" width="220" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="telegram" value="TELEGRAM&#xa;[Herramienta de mensajería]&#xa;Recibe el mensaje y el pdf de actualización de la&#xa;póliza solicitada al chat del Bot." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BDD7EE;" parent="1" vertex="1">
                     <mxGeometry x="750" y="420" width="200" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="2" style="endArrow=block;" parent="1" source="agent" target="gss" edge="1">
+                <mxCell id="2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="agent" target="gss" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" style="endArrow=block;" parent="1" source="gss" target="api" edge="1">
+                <mxCell id="3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="gss" target="api" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" style="endArrow=block;" parent="1" source="api" target="pagos" edge="1">
+                <mxCell id="4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="api" target="pagos" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" style="endArrow=block;" parent="1" source="api" target="reporteador" edge="1">
+                <mxCell id="5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="api" target="reporteador" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" style="endArrow=block;" parent="1" source="api" target="gestor" edge="1">
+                <mxCell id="6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="api" target="gestor" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" style="endArrow=block;" parent="1" source="gestor" target="mongo" edge="1">
+                <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="gestor" target="mongo" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" style="endArrow=block;" parent="1" source="api" target="notificador" edge="1">
+                <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="api" target="notificador" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" style="endArrow=block;" parent="1" source="notificador" target="telegram" edge="1">
+                <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="notificador" target="telegram" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" style="endArrow=block;" parent="1" source="api" target="simulador" edge="1">
+                <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="api" target="simulador" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="api" target="validator" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="validator" target="telegram" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>
