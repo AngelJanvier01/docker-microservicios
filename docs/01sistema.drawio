@@ -4,16 +4,19 @@
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" style="edgeStyle=none;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="agentBox" target="label1">
+                <mxCell id="2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="agentBox" target="label1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="agentBox" target="label2">
+                <mxCell id="4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="agentBox" target="label2">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="agentBox" target="label3">
+                <mxCell id="6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="agentBox" target="label3">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="agentBox" target="label4">
+                <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="agentBox" target="label4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=1.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="agentBox" target="label5">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="10" style="edgeStyle=none;html=1;exitX=1.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="agentBox" target="label5">
@@ -25,22 +28,22 @@
                 <mxCell id="gssBox" value="Global Surance System (GSS)&#xa;[Sistema de Software]&#xa;Sistema de gestión de póliza de seguro." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;" parent="1" vertex="1">
                     <mxGeometry x="110" y="320" width="460" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="arrow1" style="endArrow=block;html=1;" parent="1" source="agentBox" target="gssBox" edge="1">
+                <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="agentBox" target="gssBox" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="150" y="250" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="arrow2" style="endArrow=block;html=1;" parent="1" source="agentBox" target="gssBox" edge="1">
+                <mxCell id="arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="agentBox" target="gssBox" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="250" y="250" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="arrow3" style="endArrow=block;html=1;" parent="1" source="agentBox" target="gssBox" edge="1">
+                <mxCell id="arrow3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="agentBox" target="gssBox" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="350" y="250" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="arrow4" style="endArrow=block;html=1;" parent="1" source="agentBox" target="gssBox" edge="1">
+                <mxCell id="arrow4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="agentBox" target="gssBox" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="450" y="250" as="targetPoint"/>
                     </mxGeometry>
@@ -63,16 +66,19 @@
                 <mxCell id="circle1" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1F4E79;" parent="1" vertex="1">
                     <mxGeometry x="280" y="30" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.067;entryY=0.03;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="label1" target="gssBox">
+                <mxCell id="3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.067;entryY=0.03;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="label1" target="gssBox">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.298;entryY=0.03;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="label2" target="gssBox">
+                <mxCell id="5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.298;entryY=0.03;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="label2" target="gssBox">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.678;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="label3" target="gssBox">
+                <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.678;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="label3" target="gssBox">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.87;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="label4" target="gssBox">
+                <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.87;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="label4" target="gssBox">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1.05;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="label5" target="gssBox">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="11" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1.05;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="label5" target="gssBox">
