@@ -29,7 +29,7 @@
                     <mxGeometry x="690" y="320" width="240" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="validator" value="payment-validator-ms&#xa;[Contenedor: Go]&#xa;Valida pagos y notifica al cliente" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
-                    <mxGeometry x="300" y="320" width="240" height="80" as="geometry"/>
+                    <mxGeometry x="730" y="200" width="240" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="simulador" value="Simulador&#xa;[Contenedor: Python 3.x]&#xa;Genera pagos simulados." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
                     <mxGeometry x="220" y="620" width="220" height="80" as="geometry"/>
