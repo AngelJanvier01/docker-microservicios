@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Diagrama Microservicios" id="1">
+    <mxGraphModel dx="1468" dy="914" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Tyk Gateway -->
+        <mxCell id="gateway" value="Tyk Gateway&#xa;(Contenedor)&#xa;Componente responsable de recibir y responder las peticiones realizadas por otros sistemas." style="shape=process;whiteSpace=wrap;html=1;fillColor=#5596f7;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="360" y="300" width="280" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Cliente -->
+        <mxCell id="cliente" value="Cliente&#xa;[Contenedor: Flutter 2.x, Dart 2.x]&#xa;Componentes que utiliza la funcionalidad que realiza los microservicios." style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#a3d5ff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="360" y="60" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Telegram -->
+        <mxCell id="telegram" value="TELEGRAM&#xa;[herramienta de mensajería]&#xa;Recibe el mensaje y el pdf de actualización de la póliza solicitada al chat del bot." style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#a3d5ff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="60" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Notificador -->
+        <mxCell id="notificador" value="Notificador&#xa;[Contenedor: Python 3.x, Flask 2.x]&#xa;Generar el documento de la póliza de un asegurado." style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#d4eaff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="180" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Pagos -->
+        <mxCell id="pagos" value="Pagos&#xa;[Contenedor: Go]&#xa;Mostrar los pagos realizados por los clientes" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#d4eaff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="640" y="180" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Base Redis -->
+        <mxCell id="redis" value="Base de datos&#xa;[Contenedor: Redis 6.0.x]&#xa;Componentes responsables de registrar y almacenar las peticiones recibidas por el Gateway." style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#a3d5ff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="360" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Tyk Pump -->
+        <mxCell id="pump" value="Tyk Pump&#xa;[Contenedor]&#xa;Componente complementario que lee, procesa y envía datos agregados desde Redis hacia MongoDB" style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#d4eaff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="60" y="480" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Gestor de clientes -->
+        <mxCell id="gestor" value="Gestor de clientes&#xa;[Contenedor: Python 3.x, Flask 2.x]&#xa;Gestiona la información de los clientes en el sistema." style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#d4eaff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="480" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Reporteador -->
+        <mxCell id="reporteador" value="Reporteador&#xa;[Contenedor: Python 3.x, Flask 2.x]&#xa;Genera el documento de la póliza de un asegurado." style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#d4eaff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="540" y="480" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Tyk Dashboard -->
+        <mxCell id="dashboard" value="Tyk Dashboard&#xa;[Contenedor]&#xa;Componente complementario que permite configurar el gateway a través de una interfaz de usuario." style="shape=rectangle;whiteSpace=wrap;html=1;rounded=1;fillColor=#a3d5ff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="880" y="300" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- MongoDB -->
+        <mxCell id="mongo" value="Base de datos&#xa;[Contenedor: MongoDB 4.4.x]&#xa;Responsable de persistir los datos recibidos desde el componente Tyk Pump." style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#a3d5ff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="880" y="420" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Líneas (ejemplo 2 conexiones, puedes agregar más según necesidad) -->
+        <mxCell id="line1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="cliente" target="gateway">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="line2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="telegram" target="notificador">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
