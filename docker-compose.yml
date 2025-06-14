@@ -52,6 +52,16 @@ services:
     volumes:
       - ./volume/simulador:/data
       - ./pagos:/go/src/pagos
+  payment-validator-ms:
+    build: ./payment-validator-ms
+    ports:
+      - "0.0.0.0:8004:8004"
+    expose:
+      - 8004
+    networks:
+      microservices:
+    volumes:
+      - ./payment-validator-ms:/go/src/payment-validator-ms
   simulador:
     image: registry.gitlab.com/tareas-arquitectura-de-software-curso/microservicios/simulador:latest
     networks:

@@ -2,64 +2,73 @@
     <diagram name="Sistema de Pólizas - Microservicios" id="yZJZWR_VW7ttg2apmTk4">
         <mxGraphModel dx="1692" dy="1129" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
-                <mxCell id="0"/>
-                <mxCell id="1" parent="0"/>
-                <mxCell id="agent" value="Agente de seguros&#xa;[Persona]&#xa;Intermediario entre aseguradora&#xa;y asegurado" style="ellipse;html=1;aspect=fixed;whiteSpace=wrap;fillColor=#1F4E79;fontColor=#FFFFFF;" parent="1" vertex="1">
-                    <mxGeometry x="410" width="130" height="130" as="geometry"/>
+                <mxCell id="0" />
+                <mxCell id="1" parent="0" />
+                <mxCell id="2" value="Agente de seguros&#10;[Persona]&#10;Intermediario entre aseguradora&#10;y asegurado" style="ellipse;html=1;aspect=fixed;whiteSpace=wrap;fillColor=#1F4E79;fontColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="410" width="130" height="130" as="geometry" />
                 </mxCell>
-                <mxCell id="gss" value="Global Surance System (GSS)&#xa;[Sistema de Software]&#xa;Sistema de gestión de póliza de seguro." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;" parent="1" vertex="1">
-                    <mxGeometry x="310" y="200" width="340" height="100" as="geometry"/>
+                <mxCell id="3" value="Global Surance System (GSS)&#10;[Sistema de Software]&#10;Sistema de gestión de póliza de seguro." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F4E79;fontColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="200" width="340" height="100" as="geometry" />
                 </mxCell>
-                <mxCell id="api" value="API Gateway&#xa;[Contenedor: Tyk API Gateway 3.x]&#xa;Conector que sirve de puerta de acceso a los microservicios. Si está presente en el patrón,&#xa;el cliente no llama a los microservicios directamente." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6DA3D6;" parent="1" vertex="1">
-                    <mxGeometry x="310" y="320" width="340" height="120" as="geometry"/>
+                <mxCell id="4" value="API Gateway&#10;[Contenedor: Tyk API Gateway 3.x]&#10;Conector que sirve de puerta de acceso a los microservicios. Si está presente en el patrón,&#10;el cliente no llama a los microservicios directamente." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6DA3D6;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="320" width="340" height="120" as="geometry" />
                 </mxCell>
-                <mxCell id="pagos" value="Pagos&#xa;[Contenedor: GO]&#xa;Mostrar los pagos realizados por los clientes." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
-                    <mxGeometry x="40" y="320" width="220" height="80" as="geometry"/>
+                <mxCell id="5" value="Pagos&#10;[Contenedor: GO]&#10;Mostrar los pagos realizados por los clientes." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="320" width="220" height="80" as="geometry" />
                 </mxCell>
-                <mxCell id="reporteador" value="Reporteador&#xa;[Contenedor: Python 3.x, Flask 2.x]&#xa;Generar el documento de la póliza de un asegurado." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
-                    <mxGeometry x="100" y="500" width="220" height="80" as="geometry"/>
+                <mxCell id="6" value="Reporteador&#10;[Contenedor: Python 3.x, Flask 2.x]&#10;Generar el documento de la póliza de un asegurado." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="500" width="220" height="80" as="geometry" />
                 </mxCell>
-                <mxCell id="gestor" value="Gestor de clientes&#xa;[Contenedor: Python 3.x, Flask 2.x]&#xa;Gestiona la información de los clientes en el sistema." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
-                    <mxGeometry x="470" y="500" width="240" height="80" as="geometry"/>
+                <mxCell id="7" value="Gestor de clientes&#10;[Contenedor: Python 3.x, Flask 2.x]&#10;Gestiona la información de los clientes en el sistema." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="500" width="240" height="80" as="geometry" />
                 </mxCell>
-                <mxCell id="mongo" value="Base de datos&#xa;[Contenedor: MongoDB 5.x]&#xa;Almacena información del sistema" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#BDD7EE;" parent="1" vertex="1">
-                    <mxGeometry x="500" y="610" width="180" height="100" as="geometry"/>
+                <mxCell id="8" value="Base de datos&#10;[Contenedor: MongoDB 5.x]&#10;Almacena información del sistema" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#BDD7EE;" parent="1" vertex="1">
+                    <mxGeometry x="500" y="610" width="180" height="100" as="geometry" />
                 </mxCell>
-                <mxCell id="notificador" value="Notificador&#xa;[Contenedor: Python 3.x, Flask 2.x]&#xa;Generar el documento de la póliza de un asegurado." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
-                    <mxGeometry x="690" y="320" width="240" height="80" as="geometry"/>
+                <mxCell id="9" value="Notificador&#10;[Contenedor: Python 3.x, Flask 2.x]&#10;Generar el documento de la póliza de un asegurado." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
+                    <mxGeometry x="690" y="320" width="240" height="80" as="geometry" />
                 </mxCell>
-                <mxCell id="simulador" value="Simulador&#xa;[Contenedor: Python 3.x]&#xa;Genera pagos simulados." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
-                    <mxGeometry x="220" y="620" width="220" height="80" as="geometry"/>
+                <mxCell id="10" value="payment-validator-ms&#10;[Contenedor: Go]&#10;Valida pagos y notifica al cliente" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="320" width="240" height="80" as="geometry" />
                 </mxCell>
-                <mxCell id="telegram" value="TELEGRAM&#xa;[Herramienta de mensajería]&#xa;Recibe el mensaje y el pdf de actualización de la&#xa;póliza solicitada al chat del Bot." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BDD7EE;" parent="1" vertex="1">
-                    <mxGeometry x="750" y="420" width="200" height="80" as="geometry"/>
+                <mxCell id="11" value="Simulador&#10;[Contenedor: Python 3.x]&#10;Genera pagos simulados." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9CC3E6;" parent="1" vertex="1">
+                    <mxGeometry x="220" y="620" width="220" height="80" as="geometry" />
                 </mxCell>
-                <mxCell id="2" style="endArrow=block;" parent="1" source="agent" target="gss" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="12" value="TELEGRAM&#10;[Herramienta de mensajería]&#10;Recibe el mensaje y el pdf de actualización de la&#10;póliza solicitada al chat del Bot." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BDD7EE;" parent="1" vertex="1">
+                    <mxGeometry x="750" y="420" width="200" height="80" as="geometry" />
                 </mxCell>
-                <mxCell id="3" style="endArrow=block;" parent="1" source="gss" target="api" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="2" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry" />
                 </mxCell>
-                <mxCell id="4" style="endArrow=block;" parent="1" source="api" target="pagos" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="3" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry" />
                 </mxCell>
-                <mxCell id="5" style="endArrow=block;" parent="1" source="api" target="reporteador" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="4" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry" />
                 </mxCell>
-                <mxCell id="6" style="endArrow=block;" parent="1" source="api" target="gestor" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="4" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry" />
                 </mxCell>
-                <mxCell id="7" style="endArrow=block;" parent="1" source="gestor" target="mongo" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="17" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="4" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry" />
                 </mxCell>
-                <mxCell id="8" style="endArrow=block;" parent="1" source="api" target="notificador" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="18" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="7" target="8" edge="1">
+                    <mxGeometry relative="1" as="geometry" />
                 </mxCell>
-                <mxCell id="9" style="endArrow=block;" parent="1" source="notificador" target="telegram" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="4" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry" />
                 </mxCell>
-                <mxCell id="10" style="endArrow=block;" parent="1" source="api" target="simulador" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="9" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="4" target="11" edge="1">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="4" target="10" edge="1">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;" parent="1" source="10" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry" />
                 </mxCell>
             </root>
         </mxGraphModel>
